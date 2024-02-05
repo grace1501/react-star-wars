@@ -27,13 +27,13 @@ function App() {
   return (
     <>
       <h1>Starships</h1>
-      <p>
-        {starships ? 
+      <div className='cards-display'>
+        {starships.length ? 
         starships.map((item) => {
           return (<StarShipCard starship={item} />)
         })
       : "Loading..."}
-      </p>
+      </div>
     </>
   )
 }

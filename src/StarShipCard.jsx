@@ -1,12 +1,15 @@
 export default function StarShipCard( {starship} ) {
     console.log("Running")
     return (
-        <>
-        <h2>{starship.name}</h2>
+        <div className="card">
+        <h2>Name: {starship.name}</h2>
         <ul>
-            <li>{starship.model}</li>
-            <li>{starship.manufacturer}</li>
+            <li>Model: {starship.model}</li>
+            <li>Manufacturer: {starship.manufacturer}</li>
+            <li>Cost in credits: {starship.cost_in_credits}</li>
+            <li>Length: {starship.length}</li>
         </ul>
-        </>
+        </div>
     )
 }
+
