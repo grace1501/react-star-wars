@@ -68,7 +68,10 @@ button:focus-visible {
 }
 
 .cards-display {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
 }
 
 .card {
